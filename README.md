@@ -5,6 +5,9 @@ tags, due dates, drag-to-reorder, a live completion ring, and a light/dark theme
 
 ![stack](https://img.shields.io/badge/stack-Node%20·%20Express%20·%20Postgres%20·%20Docker-7c5cff)
 
+📐 **See the system visually:** [ARCHITECTURE.md](ARCHITECTURE.md) — Mermaid
+diagrams of the runtime, request flow, CI/CD, and Kubernetes topology.
+
 ---
 
 ## Quick start (Docker)
@@ -179,6 +182,7 @@ lumen/
 ├─ docker-compose.yml       # local: builds the web image from source
 ├─ deploy.compose.yml       # server: runs a published image
 ├─ .env.example             # configuration template
+├─ ARCHITECTURE.md          # visual system diagrams (Mermaid)
 ├─ KUBERNETES.md            # full guide: Kubernetes basics → Helm → deploying Lumen
 ├─ k8s/                     # ready-to-apply Kubernetes manifests
 │  └─ 00…07-*.yaml          # namespace, secret, postgres, web, ingress, hpa
